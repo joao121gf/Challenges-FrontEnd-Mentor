@@ -43,12 +43,12 @@ body {
 }
 
 .contents h1 {
-  font-size: 23px;
+  font-size: 25px;
   line-height: 30px;
   font-weight: 700;
 }
 .contents p {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 300;
 }
 
@@ -82,4 +82,14 @@ body {
     width: 24px;
     background-color: hsl(210, 46%, 95%);
     border-radius: 20px;
+    padding: 7px;
+}
+
+
+.contact .descp {
+  margin-right: auto;
+}
+
+.contact .icon {
+  margin-left: auto;
 }
