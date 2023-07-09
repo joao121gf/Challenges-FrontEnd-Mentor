@@ -73,18 +73,16 @@ body {
   margin: 0;
 }
 
-
-.share-icon{
-    width: 100%;
+.share-icon {
+  width: 100%;
 }
 
-.icon{
-    width: 24px;
-    background-color: hsl(210, 46%, 95%);
-    border-radius: 20px;
-    padding: 7px;
+.icon {
+  width: 24px;
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 20px;
+  padding: 7px;
 }
-
 
 .contact .descp {
   margin-right: auto;
@@ -92,4 +90,39 @@ body {
 
 .contact .icon {
   margin-left: auto;
+}
+
+@media (max-width: 848px) {
+  .container-box {
+    display: initial;
+    height: auto;
+    margin-top: 20px;
+    max-width: 500px;
+  }
+  .drawers {
+    width: 100%;
+  }
+  .image {
+    height: auto;
+  }
+  .contents {
+    padding: 20px 26px;
+  }
+  .contents h1 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+  .contents p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .she {
+    margin-right: 11px;
+    padding: 0px;
+  }
+  .name,
+  .date {
+    font-size: 13px !important;
+  }
 }
