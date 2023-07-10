@@ -20,12 +20,13 @@ body {
   background-color: white;
   display: grid;
   border-radius: 10px;
-  overflow: hidden;
   grid-template-columns: 37% 1fr;
 }
 
 .image {
   overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .container-father .image {
   flex: 0 0 20%;
@@ -82,9 +83,6 @@ body {
   background-color: hsl(210, 46%, 95%);
   border-radius: 20px;
   padding: 7px;
-  position: absolute;
-  left: 78%;
-  top: 62%;
 }
 
 .contact .descp {
@@ -96,17 +94,24 @@ body {
   background-color: hsl(217, 19%, 35%);
   padding: 10px;
   border-radius: 10px;
-  position: absolute;
+  position: relative;
   width: 206px;
   text-align: center;
-  left: 72.4%;
-  top: 51%;
-  height: 36px;
+  /* left: 12.4%; */
+  top: -23px;
+  right: 42%;
+  height: 30px;
   justify-content: space-around;
   align-items: center;
 }
 
-.container-contact::before{
+.pai {
+  position: relative;
+  bottom: 20px;
+  left: 21%;
+}
+
+.container-contact::before {
   content: "";
   position: absolute;
   bottom: -15px;
@@ -117,10 +122,13 @@ body {
   border-top: 25px solid hsl(217, 19%, 35%);
 }
 
-.container-contact img{
+.container-contact img {
   width: 22px;
   height: auto;
   padding: 0px 5px;
+}
+
+.lg-grid {
 }
 
 @media (max-width: 848px) {
@@ -155,5 +163,22 @@ body {
   .name,
   .date {
     font-size: 13px !important;
+  }
+}
+
+
+@media (max-width: 467px) {
+  .container-contact{
+    width: 206px;
+    top: -23px;
+    right: 95%;
+    height: 30px;
+  }
+  .icon{
+    left: 156px;
+  }
+  .pai{
+    left: 0%;
+    width: 100px;
   }
 }
