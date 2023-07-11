@@ -182,3 +182,15 @@ body {
     width: 100px;
   }
 }
+
+
+.container-contact{
+  opacity: 0;
+}
+.active{
+  opacity: 1;
+  transition: .3s;
+}
+.desative{
+  transition: .3s;
+}
